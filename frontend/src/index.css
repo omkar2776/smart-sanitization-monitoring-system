@@ -1,14 +1,14 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-primary: #0a1628;
-  --color-primary-light: #1e3a5f;
-  --color-primary-dark: #060f1a;
-  --color-accent: #06b6d4;
-  --color-accent-dark: #0891b2;
-  --color-accent-light: #22d3ee;
-  --color-status-green: #22c55e;
-  --color-status-yellow: #eab308;
+  --color-primary: #001f3f;
+  --color-primary-light: #003366;
+  --color-primary-dark: #001428;
+  --color-accent: #1e7d32;
+  --color-accent-dark: #145a22;
+  --color-accent-light: #2e9e47;
+  --color-status-green: #1e7d32;
+  --color-status-yellow: #f59e0b;
   --color-status-red: #ef4444;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
@@ -24,5 +24,47 @@
 
   #root {
     @apply flex min-h-screen flex-col;
+  }
+}
+
+@layer utilities {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.7s ease-out both;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.7s ease-out both;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.15s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.3s;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 0.45s;
   }
 }

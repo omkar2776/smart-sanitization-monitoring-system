@@ -1,11 +1,18 @@
-import PageHeader from '../components/ui/PageHeader'
+import HeroSection from '../components/home/HeroSection'
+import StatusStrip from '../components/home/StatusStrip'
+import WhySection from '../components/home/WhySection'
 
 function Home() {
   return (
-    <PageHeader
-      title="Home"
-      description="Welcome to the Smart Sanitization Monitoring System — an IoT-based municipal portal for monitoring public washrooms and sanitation areas using LoRa-enabled sensors."
-    />
+    <div className="bg-white">
+      <div className="relative pb-14 sm:pb-16">
+        <HeroSection />
+        <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 px-4 sm:px-6 lg:px-8">
+          <StatusStrip />
+        </div>
+      </div>
+      <WhySection />
+    </div>
   )
 }
 
