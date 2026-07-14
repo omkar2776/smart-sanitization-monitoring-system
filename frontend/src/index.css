@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #001f3f;
+  --color-primary-light: #003366;
+  --color-primary-dark: #001428;
+  --color-accent: #1e7d32;
+  --color-accent-dark: #145a22;
+  --color-accent-light: #2e9e47;
+  --color-status-green: #1e7d32;
+  --color-status-yellow: #f59e0b;
+  --color-status-red: #ef4444;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 min-h-screen bg-white font-sans text-slate-700 antialiased;
+  }
+
+  #root {
+    @apply flex min-h-screen flex-col;
+  }
+}
+
+@layer utilities {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.7s ease-out both;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.7s ease-out both;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.15s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.3s;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 0.45s;
+  }
+}
