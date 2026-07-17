@@ -56,15 +56,16 @@ function Footer() {
           </div>
 
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">
-              Team Members
-            </h2>
-            <ul className="mt-3 space-y-2 text-sm text-slate-400">
-              <li>Project Team Member 1</li>
-              <li>Project Team Member 2</li>
-              <li>Project Team Member 3</li>
-              <li>Project Team Member 4</li>
-            </ul>
+           <h2 className="text-sm font-semibold uppercase tracking-wider text-accent">
+  Team Members
+</h2>
+
+<ul className="mt-3 space-y-2 text-sm text-slate-400">
+  <li>1. Omkar Jagadale</li>
+  <li>2. Sujit Pal</li>
+  <li>3. Shreyash Badve</li>
+  <li>4. Raj Medankar</li>
+</ul>
           </div>
         </div>
 

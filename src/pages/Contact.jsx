@@ -1,12 +1,17 @@
-import PageHeader from '../components/ui/PageHeader'
+import ContactHeroSection from "../components/contact/ContactHeroSection";
+import ContactSupport from "../components/contact/ContactSupport";
+import ContactForm from "../components/contact/ContactForm";
+import ContactMap from "../components/contact/ContactMap";
 
 function Contact() {
   return (
-    <PageHeader
-      title="Contact"
-      description="For inquiries regarding the Smart Sanitization Monitoring System, please reach out to the MIT Academy of Engineering project team or your municipal department liaison."
-    />
-  )
+    <>
+      <ContactHeroSection />
+      <ContactSupport />
+      <ContactForm />
+      <ContactMap />
+    </>
+  );
 }
 
-export default Contact
+export default Contact;

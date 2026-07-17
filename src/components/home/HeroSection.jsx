@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white lg:h-[620px] lg:min-h-[620px]">
+    <section className="relative overflow-hidden bg-white lg:h-155 lg:min-h-155">
       {/* Desktop — cinematic full-bleed image (~65% width, flush to right edge) */}
       <div className="absolute inset-y-0 right-0 hidden w-[65%] lg:block">
         <img
@@ -31,15 +31,14 @@ function HeroSection() {
           loading="eager"
         />
         <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent"
+          className="pointer-events-none absolute inset-0 bg-linear-to-t from-white via-white/50 to-transparent"
           aria-hidden="true"
         />
       </div>
 
       {/* Left content column */}
-      <div className="relative z-10 flex h-full max-w-7xl items-start px-4 py-10 sm:px-6 sm:py-12 lg:min-h-[620px] lg:px-8 lg:py-0">
+     <div className="relative z-10 flex h-full w-full items-start px-6 py-10 sm:px-8 sm:py-12 lg:min-h-155 lg:px-12 lg:py-0">
         <div className="w-full max-w-xl lg:max-w-[38%] lg:shrink-0">
-         
 
           <h1 className="text-4xl font-bold leading-[1.06] tracking-tight sm:text-5xl lg:text-[3.5rem] xl:text-[4rem]">
             <span className="text-primary">Smart Sanitization</span>
