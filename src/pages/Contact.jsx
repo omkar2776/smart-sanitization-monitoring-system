@@ -1,7 +1,7 @@
-import ContactHeroSection from "../components/contact/ContactHeroSection";
-import ContactSupport from "../components/contact/ContactSupport";
-import ContactForm from "../components/contact/ContactForm";
-import ContactMap from "../components/contact/ContactMap";
+import ContactHeroSection from "../components/Contact/ContactHeroSection";
+import ContactSupport from "../components/Contact/ContactSupport";
+import ContactForm from "../components/Contact/ContactForm";
+import ContactMap from "../components/Contact/ContactMap";
 
 function Contact() {
   return (
