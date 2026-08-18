@@ -8,6 +8,16 @@ import {
 } from "lucide-react";
 
 function DashboardHeader() {
+  const [user] = useState(() => {
+  const savedUser = localStorage.getItem("loggedInUser");
+
+  return savedUser
+    ? JSON.parse(savedUser)
+    : {
+        name: "Admin",
+        email: "admin@alandi.gov.in",
+      };
+});
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -93,32 +103,7 @@ function DashboardHeader() {
 
         </button>
 
-        {/* PROFILE */}
-
-        <button className="flex items-center gap-3 rounded-xl border border-slate-700 bg-[#16263A] px-4 py-2 transition duration-300 hover:border-cyan-400">
-
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-linear-to-r from-cyan-500 to-blue-600 text-lg font-bold text-white">
-            A
-          </div>
-
-          <div className="text-left">
-
-            <h3 className="font-semibold text-white">
-              Admin
-            </h3>
-
-            <p className="text-xs text-green-400">
-              ● Online
-            </p>
-
-          </div>
-
-          <ChevronDown
-            size={18}
-            className="text-slate-400"
-          />
-
-        </button>
+       
 
       </div>
 

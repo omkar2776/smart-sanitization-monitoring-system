@@ -78,12 +78,12 @@ const technologies = [
 ];
 
 const objectives = [
-  "Real-time monitoring of public sanitation facilities.",
-  "Detect abnormal gas levels and poor air quality.",
-  "Monitor water level and waste level continuously.",
-  "Generate instant alerts for critical conditions.",
-  "Provide historical reports and smart analytics.",
-  "Improve operational efficiency and public hygiene.",
+  "Monitor real-time air quality and sanitation conditions using the MQ137 gas sensor.",
+  "Detect the presence and occupancy of users using the PIR sensor.",
+  "Measure and monitor the water tank level using the Ultrasonic sensor.",
+  "Track water consumption and usage using the Water Flow sensor.",
+  "Provide real-time monitoring data through the Smart Sanitation dashboard.",
+  "Generate alerts and support efficient sanitation management based on sensor data.",
 ];
 
 export default function About() {
@@ -137,7 +137,7 @@ export default function About() {
 
   <div className="grid grid-cols-2 gap-5">
 
-    {/* MQ135 */}
+    {/* MQ137 */}
 
     <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
 
@@ -146,7 +146,7 @@ export default function About() {
       </div>
 
       <h3 className="text-xl font-bold text-primary">
-        MQ135
+        MQ137
       </h3>
 
       <p className="text-green-600 font-semibold text-sm mt-1">
@@ -154,14 +154,14 @@ export default function About() {
       </p>
 
       <p className="text-slate-600 text-sm mt-3 leading-relaxed">
-        Monitors air quality and detects harmful gases for a safer public environment.
+        Monitors harmful gas levels and air quality for a safe sanitation environment.
       </p>
 
     </div>
 
 
 
-    {/* Water Level */}
+    {/* Water Flow Sensor */}
 
     <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
 
@@ -170,7 +170,7 @@ export default function About() {
       </div>
 
       <h3 className="text-xl font-bold text-primary">
-        Water Level
+        Water Flow Sensor
       </h3>
 
       <p className="text-blue-600 font-semibold text-sm mt-1">
@@ -178,7 +178,7 @@ export default function About() {
       </p>
 
       <p className="text-slate-600 text-sm mt-3 leading-relaxed">
-        Continuously measures water availability to ensure uninterrupted sanitation services.
+        Measures water consumption and usage by monitoring the amount of water flowing through the system.
       </p>
 
     </div>
@@ -198,11 +198,11 @@ export default function About() {
       </h3>
 
       <p className="text-orange-600 font-semibold text-sm mt-1">
-        Distance Sensor
+        Water Level Sensor
       </p>
 
       <p className="text-slate-600 text-sm mt-3 leading-relaxed">
-        Detects waste bin fill level for smart cleaning and efficient maintenance.
+        Measures the water level in the water tank to monitor water availability in real time.
       </p>
 
     </div>
@@ -238,6 +238,7 @@ export default function About() {
             </div>
 
           </div>
+          
           {/* Technologies */}
           <div className="bg-white/90 backdrop-blur rounded-3xl shadow-xl p-3">
 
@@ -283,10 +284,58 @@ export default function About() {
               })}
 
             </div>
+            {/* Sensor Datasheets */}
+<div className="bg-white/90 backdrop-blur rounded-3xl shadow-xl p-6">
+  <h2 className="text-2xl font-bold text-blue-900 mb-5">
+    Sensor Datasheets
+  </h2>
+
+  <div className="grid grid-cols-2 gap-4">
+
+    <a
+      href="/Datasheets/MQ137.PDF"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-slate-200 rounded-xl p-4 font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 hover:shadow-md transition-all duration-300"
+    >
+      MQ137 Gas Sensor
+    </a>
+
+    <a
+      href="/Datasheets/YF-S401.PDF"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-slate-200 rounded-xl p-4 font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 hover:shadow-md transition-all duration-300"
+    >
+      YF-S401 Water Flow Sensor
+    </a>
+
+    <a
+      href="/Datasheets/Ultrasonic.PDF"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-slate-200 rounded-xl p-4 font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 hover:shadow-md transition-all duration-300"
+    >
+      Ultrasonic Water Level Sensor
+    </a>
+
+    <a
+      href="/Datasheets/PIR.PDF"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-slate-200 rounded-xl p-4 font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 hover:shadow-md transition-all duration-300"
+    >
+      PIR Motion Sensor
+    </a>
+
+  </div>
+</div>
 
           </div>
 
         </div>
+
+        
 
         
 
@@ -301,15 +350,14 @@ export default function About() {
           <div className="w-32 h-1 bg-green-600 mx-auto rounded-full mt-4 mb-8"></div>
 
           <p className="max-w-5xl mx-auto text-center text-lg text-gray-700 leading-10">
-            Traditional sanitation monitoring relies heavily on manual
-            inspection, resulting in delayed maintenance, increased
-            operational costs, and poor resource utilization. This
-            project introduces an intelligent IoT-based monitoring
-            platform that enables real-time visibility into sanitation
-            facilities, automated alert generation, centralized
-            monitoring, and data-driven maintenance planning. The system
-            enhances operational efficiency while contributing to cleaner,
-            healthier, and smarter public infrastructure.
+           The Smart Sanitation Monitoring System is developed specifically for
+           Alandi Municipal Council to improve the monitoring and management of
+           public sanitation facilities. The system uses IoT-based sensors to
+           provide real-time information about harmful gas levels, water tank
+           levels, water consumption, and facility occupancy. This enables the
+           municipal authorities to monitor sanitation facilities remotely,
+           identify issues quickly, and support timely maintenance and efficient
+           resource management.
           </p>
 
         </div>
