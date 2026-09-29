@@ -15,3 +15,4 @@
 
 Exact value ranges will be calibrated during hardware testing.
 Related issue: #7
+Test environment: ESP32 dev board with sensors on breadboard
