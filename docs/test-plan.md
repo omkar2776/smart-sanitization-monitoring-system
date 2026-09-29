@@ -14,3 +14,4 @@
 3. Confirm the dashboard widget updates.
 
 Exact value ranges will be calibrated during hardware testing.
+Related issue: #7
